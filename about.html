@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Etched</title>
+	<title>Contact Us</title>
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,8 +18,6 @@
 		</div> -->
 </head>
 <body>
-		
-		<br>
 		<div id="nav">
 		    <div id="nav_wrapper">
 		        <ul>
@@ -38,7 +36,7 @@
 		                    </li>
 		                </ul>
 		            </li>
-		           <li> <a href="about.html">Contact</a>
+		            <li> <a href="about.html">Contact</a>
 		            </li>
 		            <li> <a href="#">My Account</a>
 		            </li>
@@ -48,12 +46,33 @@
 		    </div>
 		    <!-- Nav wrapper end -->
 		</div>
-		<!-- Nav end -->
-		<div class="mainphoto container">
-		<img src="images/etchedlanding.png">
-		</div>
+
+		<form>
+		<div class="contactus container">
+		  <p>Your Contact Info</p> <br><br>
+	 <label for="firstName">First Name</label>
+	    <input type= "text" name="firstName" id="firstName" size="30" placeholder="First Name" required>
+	   <label for="lastName">Last Name</label>
+	    <input type= "text" name="lastName" id="firstName" size="30" placeholder="Last Name" required>
+
+	<p> Message</p>
+	<p>Product</p>  <label for="dropbox"></label> 
+	   	<select id="dropbox">
+	    <option value="daily" >Daily Pages</option>
+	    <option value="weekly">Weekly Pages</option>
+	    <option value="dashboards" selected>Dashboards</option>
+	</select>  
+	    
+	<label for="pastExperience">What's on your mind?</label>
+	<textarea rows="10" cols="100" id="pastExperience"></textarea>     
+	  
+  <input type="submit" value="Send It">
+
+	</form>
+	</div>
 
 
+		
 	<div class= footer container>
 <footer>
 			<p> &copy; 2017 Etched. Washington, DC
@@ -61,10 +80,7 @@
 	</footer>
 </div>
 
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>
